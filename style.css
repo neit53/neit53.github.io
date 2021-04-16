@@ -1,3 +1,90 @@
+html {
+    font-family: calibri, sans-serif;
+    font-size: 10px;
+}
+
+body {
+    margin: 0px;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.grid {
+    display: grid;
+    grid-template: 
+        "avatar header header header " 
+        "sidebar content content content";
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    grid-area: avatar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 130, 158);
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(9, 153, 146);
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+
 .img-avt {
+    width: 200px;
     border-radius: 50%;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(252, 233, 233);
+    padding: 10px;
+}
+
+.img-contact{
+    width: 20px;
+    padding: 5px;
+}
+
+.contact-info {
+    display: flex;
+}
+
+.sidebar-header {
+    text-align: center;
+}
+
+.img-edu {
+    height: 50px;
+    object-fit: cover;
+}
+
+.edu-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    grid-area: content;
+    background-color: beige;
 }
